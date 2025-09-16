@@ -2,6 +2,14 @@ main {
     max-width: 800px
 }
 
+main img {
+    width: 150px;
+    height: auto;
+    border: 0;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.33);
+}
+
 
 aside img {
     max-width: 200px;
@@ -16,15 +24,6 @@ aside {
     border: 0;
     background-color: lightslategray;
     color: white;
-}
-
-main img {
-    width: 150px;
-    height: auto;
-    border: 0;
-    padding: 10px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.33);
-
 }
 
 main p {
@@ -46,19 +45,14 @@ nav {
     padding: 10px;
     justify-content: left;
     display: flex;
+}
 
-    a {
-        color: indianred;
-        padding: 10px;
-        display: block;
-        background-color: ghostwhite;
-        text-decoration: none;
-
-
-
-    }
-
-
+nav a {
+    color: indianred;
+    padding: 10px;
+    display: block;
+    background-color: ghostwhite;
+    text-decoration: none;
 }
 
 nav a:hover {
