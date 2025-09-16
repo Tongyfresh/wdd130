@@ -6,19 +6,25 @@ main {
 aside img {
     max-width: 200px;
     height: auto;
+    padding: 10px;
 }
 
 aside {
     max-width: 800px;
     margin: 0;
-    padding: 0;
-    background-color: #008090;
+    padding: 10px;
+    border: 0;
+    background-color: lightslategray;
     color: white;
 }
 
 main img {
     width: 150px;
     height: auto;
+    border: 0;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.33);
+
 }
 
 main p {
@@ -29,4 +35,34 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+h1 {
+    color: lightslategrey;
+}
+
+nav {
+    background-color: lightslategray;
+    padding: 10px;
+    justify-content: left;
+    display: flex;
+
+    a {
+        color: indianred;
+        padding: 10px;
+        display: block;
+        background-color: ghostwhite;
+        text-decoration: none;
+
+
+
+    }
+
+
+}
+
+nav a:hover {
+    background-color: lightslategray;
+    color: white;
+    transition-duration: .3s;
 }
