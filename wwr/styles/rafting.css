@@ -165,3 +165,20 @@ footer {
     transition-duration: .3s;
 
 }
+
+/* Contact Us Selectors */
+.contact-info {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0.1rem;
+    line-height: 1;
+}
