@@ -23,9 +23,14 @@
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
+}
 
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
 }
 
 h1 {
@@ -48,6 +53,7 @@ article {
     background-color: var(--primary);
     color: white;
     text-shadow: var(--text-shadow-standard);
+    margin-bottom: 2rem;
 
 }
 
@@ -55,18 +61,6 @@ body {
     font-weight: var(--body-font-weight);
     font-family: var(--body-font-family);
 }
-
-
-
-nav,
-p,
-section {
-    margin-top: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-
-}
-
 
 
 ul {
@@ -134,7 +128,7 @@ footer {
 }
 
 .main-nav {
-    background-color: var(--primary);
+    background-color: white;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -154,16 +148,20 @@ footer {
 
 .main-nav ul li a {
     display: block;
-    color: white;
+    color: var(--primary);
     text-decoration: none;
 
 }
 
 .main-nav a:hover {
-    background-color: white;
-    color: var(--primary);
+    background-color: var(--primary);
+    color: white;
     transition-duration: .3s;
 
+}
+.main-nav li:not(:first-child) a {
+    border-left: 3px solid var(--primary);
+    margin-left: -3px;
 }
 
 /* Contact Us Selectors */
@@ -181,4 +179,36 @@ footer {
     margin: 0;
     padding: 0.1rem;
     line-height: 1;
+}
+
+
+/* About Us Selectors */
+
+.adventures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.adventures h2 {
+    width: 100%; 
+    margin-bottom: 1rem;
+}
+
+.adventures figure {
+    flex: 1 1 150px;
+    text-align: center;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    height: 120px; 
+    object-fit: cover; 
 }
