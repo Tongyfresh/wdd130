@@ -38,10 +38,65 @@
                 </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44223.28753934736!2d104.93129421511885!3d11.564520780821217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310957d442dad7ef%3A0x665f723e94840774!2sCoconut%20Park%20Koh%20Pich!5e0!3m2!1sen!2sus!4v1759435262239!5m2!1sen!2sus"
-                    width="600" height="450" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="contact-form-container">
+                    <form action="contact-success.html" method="post">
+                        <div class="form-item">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name">
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="user_email">
+                        </div>
+                        <div class="form-item">
+                            <p>Purpose of your message:</p>
+                            <input type="radio" id="purpose_general" name="purpose" value="general">
+                            <label for="purpose_general">General Inquiry</label><br>
+                            <input type="radio" id="purpose_reservation" name="purpose" value="reservation">
+                            <label for="purpose_reservation">Reservation Question</label><br>
+                            <input type="radio" id="purpose_suggestion" name="purpose" value="suggestion">
+                            <label for="purpose_suggestion">Website Suggestion</label>
+                        </div>
+                        <div class="form-item">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="user_message" rows="4"></textarea>
+                        </div>
+                        <div class="form-item checkbox-item">
+                            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                        </div>
+                        <button type="submit">Get in Touch!</button>
+                    </form>
+                </div>
+
             </section>
+
         </div>
+        <section class="adventures employee-section">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee-1.jpg" alt="Team member Jane Doe">
+                <figcaption>Jane Doe<br><em>Lead Guide</em></figcaption>
+            </figure>
+            <figure>
+                <img class="john" src="images/employee-2.jpg" alt="Team member John Smith">
+                <figcaption>John Smith<br><em>Logistics Coordinator</em></figcaption>
+            </figure>
+            <figure>
+                <img class="emily" src="images/employee-3.jpg" alt="Team member Emily White">
+                <figcaption>Emily White<br><em>Safety Officer</em></figcaption>
+            </figure>
+            <figure>
+                <img src="images/me.jpg" alt="Team member Alex Bridge">
+                <figcaption>Alex Bridge<br><em>Founder & CEO</em></figcaption>
+            </figure>
+
+
+
+        </section>
+
         <section class="box">
             <!-- <h2>History</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

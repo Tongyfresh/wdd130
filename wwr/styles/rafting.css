@@ -181,6 +181,91 @@ footer {
     line-height: 1;
 }
 
+.hero section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.hero h1,
+.contact-info {
+    grid-column: 1 / 3;
+}
+
+.hero iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+}
+
+form {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background-color: #fff;
+    color: black;
+}
+
+.form-item {
+    margin-bottom: 1rem;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+    
+}
+
+.form-item input[type="radio"] + label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: large;
+    background-color: var(--primary);
+    color: white;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 1rem;
+    display: flex;
+    
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input {
+    margin-right: 0.5rem;
+}
+
+.employee-section .emily {
+    object-position: center top;
+}
+
+.employee-section .john {
+    object-position: center top;
+}
+
+
 
 /* About Us Selectors */
 
@@ -208,7 +293,13 @@ footer {
 
 .adventures img {
     width: 100%;
-    height: auto;
     height: 120px; 
     object-fit: cover; 
+}
+
+.adventures figcaption {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary);
 }
