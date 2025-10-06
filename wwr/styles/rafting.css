@@ -303,3 +303,27 @@ button {
     font-weight: bold;
     color: var(--primary);
 }
+
+.history {
+    margin: 2rem 0;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.history-content p {
+    text-align: left;
+    line-height: 1.6;
+}
+
