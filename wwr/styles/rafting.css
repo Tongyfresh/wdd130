@@ -1,10 +1,10 @@
 :root {
-    --primary: #3B84B5;
+    --primary: #2A7AB0;
     --primary-transparent: rgba(59, 132, 181, 0.5);
     --secondary: #ACC590;
     --secondary-transparent: rgba(172, 197, 144, 0.5);
     --primary-white: #EFEBE7;
-    --accent-color: #FACA19;
+    --accent-color: #E1B417;
     --accent-transparent: rgba(250, 202, 25, 0.5);
     --heading-font-weight: 700;
     --primary-font-family: "Verdana", sans-serif;
@@ -32,18 +32,6 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
 }
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--accent-color);
-    color: white;
-    text-shadow: var(--text-shadow-standard);
-}
-
-
 
 h1,
 h2,
@@ -90,11 +78,6 @@ footer {
     position: relative;
 }
 
-.hero h1 {
-    background-color: var(--primary-transparent);
-    position: absolute;
-}
-
 .hero img {
     display: block;
     width: 100%;
@@ -103,9 +86,19 @@ footer {
 
 }
 
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    background-color: var(--accent-transparent);
+    color: white;
+}
+
+
 .hero article {
     position: absolute;
     text-align: center;
+    background-color: var(--secondary-transparent);
     width: 100%;
     bottom: 5px;
     padding: 0px;
@@ -115,7 +108,6 @@ footer {
     color: white;
     text-shadow: var(--text-shadow-standard);
     font-weight: 700;
-    background-color: var(--secondary-transparent);
 
 
 
@@ -172,7 +164,6 @@ footer {
     left: 0;
     width: 100%;
     height: 50%; 
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
 }
 
 /* Home Page Selectors */
