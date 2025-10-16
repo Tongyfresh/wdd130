@@ -165,12 +165,21 @@ footer {
     margin-left: -3px;
 }
 
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+
 /* Home Page Selectors */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    margin: 2rem 0;
 }
 
 .card {
@@ -417,3 +426,62 @@ button {
     line-height: 1.6;
 }
 
+/* Trips Page Selectors */
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    background-color: #fff;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.trip-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin: 0;
+}
+
+.trip-card p {
+    padding: 0 1rem 1rem 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.trip-table-section {
+    margin: 2rem 0;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid var(--primary);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trip-table thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: var(--primary-white);
+}
